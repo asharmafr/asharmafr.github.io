@@ -34,7 +34,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 
 nav { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); }
-nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 56px; }
+nav .wrap { display: flex; align-items: center; justify-content: flex-end; gap: 16px; height: 56px; }
 .brand { font: 500 19px/1 var(--serif); color: var(--ink); }
 .brand:hover { text-decoration: none; }
 nav ul { display: flex; gap: 22px; margin: 0; padding: 0; list-style: none; font-size: 14px; }
@@ -89,7 +89,6 @@ footer { padding: 28px 0 40px; border-top: 1px solid var(--rule); color: var(--m
 
 <nav aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top">Abhishek Sharma</a>
     <ul>
       <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
@@ -102,7 +101,6 @@ footer { padding: 28px 0 40px; border-top: 1px solid var(--rule); color: var(--m
 <header class="hero">
   <div class="hero-title">
     <h1>Abhishek Sharma</h1>
-    <p class="lede">From cats &amp; dogs to proteins &amp; cells: a large-scale ML/AI perspective</p>
   </div>
   <div>
     <p class="bio">I am an ML researcher currently focused on understanding how biological systems maintain their identity, respond to perturbations, and transition between states. I am particularly interested in cell reprogramming, with the long-term (optimistic) goal of applying it to cancer and brain diseases. An underlying theme of my ML research centres around simple unified frameworks, learning from constraints and weak supervision.</p>
